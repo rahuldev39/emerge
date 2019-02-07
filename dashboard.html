@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Dashboard
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <!-- CSS Files -->
+  <link href="./assets/css/material-dashboard.min.css" rel="stylesheet" />
+  <link href="./assets/css/custom.css" rel="stylesheet" />
+
+</head>
+
+<body class="sidebar-mini">
+  <div class="menu-overlay"></div>
+  <div class="wrapper ">
+    <div class="sidebar" data-color="rose" data-background-color="black">
+      <div class="logo">
+        <div class="navbar-minimize text-center">
+          <button id="minimizeSidebar" class="btn btn-just-icon btn-link btn-fab btn-round">
+            <i class="material-icons text_align-center visible-on-sidebar-regular">keyboard_arrow_right</i>
+            <i class="material-icons design_bullet-list-67 visible-on-sidebar-mini">menu</i>
+          </button>
+        </div>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item active ">
+            <a class="nav-link" href="#" data-toggle="tooltip" data-placement="right" title="Dashboard">
+              <i class="material-icons">dashboard</i>
+              <p> Dashboard </p>
+            </a>
+          </li>
+
+
+          <li class="nav-item ">
+            <a class="nav-link" href="#" data-toggle="tooltip" data-placement="right" title="widgets">
+              <i class="material-icons">widgets</i>
+              <p> Widgets </p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#" data-toggle="tooltip" data-placement="right" title="timeline">
+              <i class="material-icons">timeline</i>
+              <p> Charts </p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#" data-toggle="tooltip" data-placement="right" title="date_range">
+              <i class="material-icons">date_range</i>
+              <p> Calendar </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent ">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+
+            <a class="navbar-brand" href="#">Dashboard</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end">
+            <form class="navbar-form">
+              <div class="input-group no-border">
+                <input type="text" value="" class="form-control" placeholder="Search...">
+                <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                  <i class="material-icons">search</i>
+                  <div class="ripple-container"></div>
+                </button>
+              </div>
+            </form>
+            <ul class="navbar-nav">
+
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="material-icons">notifications</i>
+                  <span class="notification">5</span>
+                  <p class="d-lg-none d-md-block">
+                    Some Actions
+                  </p>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Mike John responded to your email</a>
+                  <a class="dropdown-item" href="#">You have 5 new tasks</a>
+                  <a class="dropdown-item" href="#">You're now friend with Andrew</a>
+                  <a class="dropdown-item" href="#">Another Notification</a>
+                  <a class="dropdown-item" href="#">Another One</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#pablo" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="material-icons">person</i>
+                  <p class="d-lg-none d-md-block">
+                    Account
+                  </p>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
+                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">Settings</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Log out</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+        <div class="content">
+          <div class="content-wrapper">
+            <div class="content-header">
+              <div class="tool-bar-container">
+                <div class="search-wrapper">
+                  <div class="s-title">
+                    <h4>Quotes <small>33</small> </h4>
+                  </div>
+                  <div class="search">
+                    <button type="submit" class="btn btn-link btn-round btn-just-icon search-btn">
+                      <i class="material-icons">search</i>
+                      <div class="ripple-container"></div>
+                    </button>
+                    <div class="search-input-box">
+                      <input type="text" value="" class="form-control" placeholder="Search...">
+                      <button type="submit" class="btn btn-link btn-round btn-just-icon">
+                        <i class="material-icons">close</i>
+                        <div class="ripple-container"></div>
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="filter-wrapper">
+                  <div class="dropdown">
+                    <button class="btn btn-link btn-round filter-btn btn-just-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown" >
+                      <i class="material-icons">filter_list</i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right filter-dropdown" aria-labelledby="dropdownMenuButton">
+
+                      <ul class="dropdown-list">
+                        <li>
+                          <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value=""> Open
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                          <div class="ripple-container"></div>
+                        </div>
+
+                      </li>
+                        <li>
+                          <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value=""> Close
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                          <div class="ripple-container"></div>
+                        </div>
+
+                      </li>
+                        <li>
+                          <div class="form-footer text-right">
+                            <button class="btn btn-rose btn-sm">Clear<div class="ripple-container"></div></button>
+                            <button class="btn btn-rose btn-sm">Apply<div class="ripple-container"></div></button>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-content">
+              <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead class=" text-primary">
+                          <tr><th>
+                            ID
+                          </th>
+                          <th>
+                            Name
+                          </th>
+                          <th>
+                            Country
+                          </th>
+                          <th>
+                            City
+                          </th>
+                          <th>
+                            Salary
+                          </th>
+                        </tr></thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              1
+                            </td>
+                            <td>
+                              Dakota Rice
+                            </td>
+                            <td>
+                              Niger
+                            </td>
+                            <td>
+                              Oud-Turnhout
+                            </td>
+                            <td>
+                              $36,738
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              2
+                            </td>
+                            <td>
+                              Minerva Hooper
+                            </td>
+                            <td>
+                              Curaçao
+                            </td>
+                            <td>
+                              Sinaai-Waas
+                            </td>
+                            <td>
+                              $23,789
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              3
+                            </td>
+                            <td>
+                              Sage Rodriguez
+                            </td>
+                            <td>
+                              Netherlands
+                            </td>
+                            <td>
+                              Baileux
+                            </td>
+                            <td>
+                              $56,142
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              4
+                            </td>
+                            <td>
+                              Philip Chaney
+                            </td>
+                            <td>
+                              Korea, South
+                            </td>
+                            <td>
+                              Overland Park
+                            </td>
+                            <td>
+                              $38,735
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              5
+                            </td>
+                            <td>
+                              Doris Greene
+                            </td>
+                            <td>
+                              Malawi
+                            </td>
+                            <td>
+                              Feldkirchen in Kärnten
+                            </td>
+                            <td>
+                              $63,542
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              6
+                            </td>
+                            <td>
+                              Mason Porter
+                            </td>
+                            <td>
+                              Chile
+                            </td>
+                            <td>
+                              Gloucester
+                            </td>
+                            <td>
+                              $78,615
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              6
+                            </td>
+                            <td>
+                              Mason Porter
+                            </td>
+                            <td>
+                              Chile
+                            </td>
+                            <td>
+                              Gloucester
+                            </td>
+                            <td>
+                              $78,615
+                            </td>
+                          </tr><tr>
+                            <td>
+                              6
+                            </td>
+                            <td>
+                              Mason Porter
+                            </td>
+                            <td>
+                              Chile
+                            </td>
+                            <td>
+                              Gloucester
+                            </td>
+                            <td>
+                              $78,615
+                            </td>
+                          </tr><tr>
+                            <td>
+                              6
+                            </td>
+                            <td>
+                              Mason Porter
+                            </td>
+                            <td>
+                              Chile
+                            </td>
+                            <td>
+                              Gloucester
+                            </td>
+                            <td>
+                              $78,615
+                            </td>
+                          </tr><tr>
+                            <td>
+                              6
+                            </td>
+                            <td>
+                              Mason Porter
+                            </td>
+                            <td>
+                              Chile
+                            </td>
+                            <td>
+                              Gloucester
+                            </td>
+                            <td>
+                              $78,615
+                            </td>
+                          </tr><tr>
+                            <td>
+                              6
+                            </td>
+                            <td>
+                              Mason Porter
+                            </td>
+                            <td>
+                              Chile
+                            </td>
+                            <td>
+                              Gloucester
+                            </td>
+                            <td>
+                              $78,615
+                            </td>
+                          </tr><tr>
+                            <td>
+                              6
+                            </td>
+                            <td>
+                              Mason Porter
+                            </td>
+                            <td>
+                              Chile
+                            </td>
+                            <td>
+                              Gloucester
+                            </td>
+                            <td>
+                              $78,615
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+            </div>
+          </div>
+          </div>
+
+        </div>
+      </div>
+
+  <!--   Core JS Files   -->
+  <script src="./assets/js/core/jquery.min.js"></script>
+  <script src="./assets/js/core/popper.min.js"></script>
+  <script src="./assets/js/core/bootstrap-material-design.min.js"></script>
+  <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!-- Plugin for the momentJs  -->
+  <script src="./assets/js/plugins/moment.min.js"></script>
+  <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+  <script src="./assets/js/plugins/bootstrap-selectpicker.js"></script>
+  <!--  DataTables.net Plugin, full documentation here: https://datatables.net/  -->
+  <script src="./assets/js/plugins/jquery.dataTables.min.js"></script>
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="./../../buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/material-dashboard.min.js" type="text/javascript"></script>
+  <script src="./assets/js/script.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      $('.nav .nav-item .nav-link').tooltip()
+      $('.btn').tooltip()
+  </script>
+  <script type="text/javascript">
+    $('.search .btn').click(function() {
+      $('.search-wrapper').toggleClass('search-open');
+      $('.search-input-box input').focus()
+    })
+  </script>
+<script type="text/javascript">
+  $('.dropdown-menu').click(function(e) {
+    e.stopPropagation();
+  });
+</script>
+<script type="text/javascript">
+  $(".content-wrapper .main-content").perfectScrollbar()
+</script>
+</body>
+
+</html>
