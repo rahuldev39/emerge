@@ -8970,7 +8970,7 @@ form {
 }
 
 .form-control:invalid {
-  background-image: linear-gradient(0deg, #f44336 2px, rgba(244, 67, 54, 0) 0), linear-gradient(0deg, #d2d2d2 1px, hsla(0, 0%, 82%, 0) 0)
+    background-image: linear-gradient(0deg, #e91e63 2px, rgba(244, 67, 54, 0) 0), linear-gradient(0deg, #d2d2d2 1px, hsla(0, 0%, 82%, 0) 0);
 }
 
 .form-control:read-only {
@@ -12540,7 +12540,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 }
 
 .card .card-body .form-group {
-  margin: 8px 0 0
+    margin: 12px 0 0;
 }
 
 .card .card-header {
@@ -21418,8 +21418,8 @@ select.bs-select-hidden, select.selectpicker {
 }
 
 .bootstrap-select .dropdown-item.active {
-  background: #9c27b0;
-  color: #fff
+    background: #e91e63;
+    color: #fff;
 }
 
 .bootstrap-select>select.bs-select-hidden, select.bs-select-hidden, select.selectpicker {
@@ -21575,16 +21575,19 @@ select.bs-select-hidden, select.selectpicker {
 }
 
 .bootstrap-select .dropdown-toggle .filter-option {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding-top: inherit;
-  padding-right: inherit;
-  padding-bottom: inherit;
-  padding-left: inherit;
-  height: 100%;
-  width: 100%;
-  text-align: left
+    position: absolute;
+    top: -4px;
+    left: 0;
+    padding-top: inherit;
+    padding-right: inherit;
+    padding-bottom: inherit;
+    padding-left: inherit;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    text-transform: initial;
+    color: #495057;
+    font-size: 14px;
 }
 
 .bootstrap-select .dropdown-toggle .filter-option-inner {
@@ -21826,20 +21829,20 @@ select.bs-select-hidden, select.selectpicker {
 }
 
 .bootstrap-select .btn.dropdown-toggle.select-with-transition {
-  border: 0 !important;
-  background-image: linear-gradient(0deg, #9c27b0 2px, rgba(156, 39, 176, 0) 0), linear-gradient(0deg, #d2d2d2 1px, hsla(0, 0%, 82%, 0) 0);
-  background-size: 0 100%, 100% 100%;
-  background-repeat: no-repeat;
-  background-position: bottom, 50% calc(100% - 1px);
-  background-color: transparent !important;
-  transition: background 0s linear !important;
-  float: none !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
-  color: #3c4858 !important;
-  height: 34px;
-  padding-left: 0 !important;
-  padding-bottom: 5px !important
+    border: 0 !important;
+    background-image: linear-gradient(0deg, #e91e63 2px, rgba(156, 39, 176, 0) 0), linear-gradient(0deg, #d2d2d2 1px, hsla(0, 0%, 82%, 0) 0);
+    background-size: 0 100%, 100% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom, 50% calc(100% - 1px);
+    background-color: transparent !important;
+    transition: background 0s linear !important;
+    float: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    color: #3c4858 !important;
+    height: 34px;
+    padding-left: 0 !important;
+    padding-bottom: 5px !important;
 }
 
 .bootstrap-select .btn.dropdown-toggle.select-with-transition:focus {
