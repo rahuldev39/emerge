@@ -12085,7 +12085,8 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 }
 
 .table thead tr th {
-    font-size: .9rem;
+    font-size: .8rem;
+    white-space: nowrap;
 }
 
 .table .th-description {
@@ -12540,7 +12541,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 }
 
 .card .card-body .form-group {
-    margin: 12px 0 0;
+    margin: 18px 0 0;
 }
 
 .card .card-header {
@@ -21478,9 +21479,6 @@ select.bs-select-hidden, select.selectpicker {
   width: auto !important
 }
 
-.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
-  width: 220px
-}
 
 .bootstrap-select .dropdown-toggle:focus {
   outline: thin dotted #333 !important;
