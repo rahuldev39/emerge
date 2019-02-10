@@ -11,7 +11,9 @@
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <!-- CSS Files -->
+  <link href="./assets/css/richtext.min.css" rel="stylesheet" />
   <link href="./assets/css/material-dashboard.min.css" rel="stylesheet" />
   <link href="./assets/css/custom.css" rel="stylesheet" />
 
@@ -31,7 +33,7 @@
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item active ">
+          <li class="nav-item ">
             <a class="nav-link" href="./dashboard.html" data-toggle="tooltip" data-placement="right" title="Dashboard">
               <i class="material-icons">dashboard</i>
               <p> Dashboard </p>
@@ -45,7 +47,7 @@
               <p> Single Load </p>
             </a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item active ">
             <a class="nav-link" href="./form3.html" data-toggle="tooltip" data-placement="right" title="Bulk Load">
               <i class="material-icons">widgets</i>
               <p> Bulk Load </p>
@@ -123,7 +125,7 @@
               <div class="tool-bar-container">
 
                 <div class="page-title-wrapper">
-                  <h4>Single Loads
+                  <h4>Bulk Loads
                     <small>Post, repost and manage your loads. Find available trucks matching your loads.</small>
                   </h4>
                 </div>
@@ -140,140 +142,143 @@
                     <div class="row">
                         <div class="col-md-3">
                           <div class="form-group">
-                            <label for="exampleEmail" class="bmd-label-floating">Origin Point </label>
+                            <select class="selectpicker" data-size="7" data-style="select-with-transition" title="Single Select">
+                              <option disabled selected>Status</option>
+                              <option value="2">Available</option>
+                              <option value="3">Not Available</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <label for="exampleEmail" class="bmd-label-floating">Spot load #*</label>
                             <input type="email" class="form-control" id="exampleEmail">
                           </div>
                         </div>
                         <div class="col-md-3">
                           <div class="form-group">
-                            <label for="exampleEmail" class="bmd-label-floating">Destination Point </label>
+                            <label for="exampleEmail" class="bmd-label-floating">Pro Number</label>
+                            <input type="email" class="form-control" id="exampleEmail">
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <label for="exampleEmail" class="bmd-label-floating">Rep Name</label>
+                            <input type="email" class="form-control" id="exampleEmail">
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <label for="exampleEmail" class="bmd-label-floating">Extension</label>
+                            <input type="email" class="form-control" id="exampleEmail">
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <label for="exampleEmail" class="bmd-label-floating">Load Quote</label>
+                            <input type="email" class="form-control" id="exampleEmail">
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <label for="exampleEmail" class="bmd-label-floating">Origin</label>
+                            <input type="email" class="form-control" id="exampleEmail">
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <label for="exampleEmail" class="bmd-label-floating">Destination</label>
+                            <input type="email" class="form-control" id="exampleEmail">
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <label for="exampleEmail" class="bmd-label-floating">Weight (LBS)</label>
                             <input type="email" class="form-control" id="exampleEmail">
                           </div>
                         </div>
                         <div class="col-md-3">
                           <div class="form-group">
                             <select class="selectpicker" data-size="7" data-style="select-with-transition" title="Single Select">
-                              <option disabled selected>Equipments</option>
-                              <option value="2">Foobar</option>
-                              <option value="3">Is great</option>
-                              <option value="4">Is bum</option>
-                              <option value="5">Is wow</option>
-                              <option value="6">boom</option>
+                              <option disabled selected>TL/LTL</option>
+                              <option value="2">TL</option>
+                              <option value="3">LTL</option>
                             </select>
-
                           </div>
                         </div>
                         <div class="col-md-3">
                           <div class="form-group">
-                              <input type="text" class="form-control datepicker" value="10/06/2018">
+                            <label for="exampleEmail" class="bmd-label-floating">Distance (Miles)</label>
+                            <input type="email" class="form-control" id="exampleEmail">
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <label for="exampleEmail" class="bmd-label-floating">Length of equipment</label>
+                            <input type="email" class="form-control" id="exampleEmail">
+                          </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row">
+
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <label for="exampleEmail" class="bmd-label-floating">Equipment (Truck Type)</label>
+                            <input type="email" class="form-control" id="exampleEmail">
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <label for="exampleEmail" class="bmd-label-floating">Commodity</label>
+                            <input type="email" class="form-control" id="exampleEmail">
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <label for="exampleEmail" class="bmd-label-floating">Special Instructions / Accessorial</label>
+                            <input type="email" class="form-control" id="exampleEmail">
+                          </div>
+                        </div>
+
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <label for="exampleEmail" class="bmd-label-floating">Pick up date</label>
+                            <input type="text" class="form-control datepicker">
                           </div>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-md-3">
-                          <div class="form-group">
-                            <label for="exampleEmail" class="bmd-label-floating">Payments ($)</label>
-                            <input type="email" class="form-control" id="exampleEmail">
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="form-group">
-                            <label for="exampleEmail" class="bmd-label-floating">Distance (miles)</label>
-                            <input type="email" class="form-control" id="exampleEmail">
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="form-group">
-                            <label for="exampleEmail" class="bmd-label-floating">Quantity</label>
-                            <input type="email" class="form-control" id="exampleEmail">
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="form-group">
-                            <label for="exampleEmail" class="bmd-label-floating">Quantity</label>
-                            <input type="email" class="form-control" id="exampleEmail">
-                          </div>
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-md-3">
-                          <div class="form-group">
-                            <label for="exampleEmail" class="bmd-label-floating">Comodity</label>
-                            <input type="email" class="form-control" id="exampleEmail">
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="form-group">
-                            <div class="form-check">
-                            <label class="form-check-label">
-                              <input class="form-check-input" type="checkbox" value=""> Partial (LTL)
-                              <span class="form-check-sign">
-                                <span class="check"></span>
-                              </span>
-                            </label>
-                            <div class="ripple-container"></div>
-                          </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="form-group">
-                            <label for="exampleEmail" class="bmd-label-floating">Comodity</label>
-                            <input type="email" class="form-control" id="exampleEmail">
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="form-group">
-                            <div class="form-check">
-                            <label class="form-check-label">
-                              <input class="form-check-input" type="checkbox" value=""> Partial (LTL)
-                              <span class="form-check-sign">
-                                <span class="check"></span>
-                              </span>
-                            </label>
-                            <div class="ripple-container"></div>
-                          </div>
-                          </div>
-                        </div>
-                    </div>
 
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label for="exampleEmail" class="bmd-label-floating">Min/Max Carrier Price</label>
+                          <input type="email" class="form-control" id="exampleEmail">
+                        </div>
+                      </div>
+
+                    </div>
 
                     <div class="row">
                       <div class="col-md-12">
-                        <div class="form-group">
-                          <label for="exampleEmail" class="bmd-label-floating">Addtional Info</label>
-                          <textarea class="form-control" name="additional" rows="3" required=""></textarea>
+                        <div class="">
+                          <textarea class="comments-content" name="comments"></textarea>
                         </div>
                       </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-3">
-                          <div class="form-group">
-                            <label for="exampleEmail" class="bmd-label-floating">Load Weight (lbs)</label>
-                            <input type="email" class="form-control" id="exampleEmail">
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="form-group">
-                            <label for="exampleEmail" class="bmd-label-floating">Contact Name</label>
-                            <input type="email" class="form-control" id="exampleEmail">
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="form-group">
-                            <label for="exampleEmail" class="bmd-label-floating">Contact Email</label>
-                            <input type="email" class="form-control" id="exampleEmail">
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="form-group">
-                            <label for="exampleEmail" class="bmd-label-floating">Contact Mobile</label>
-                            <input type="email" class="form-control" id="exampleEmail">
-                          </div>
-                        </div>
-                    </div>
+
 
                   </div>
 
@@ -301,6 +306,8 @@
   <script src="./assets/js/plugins/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
   <!--  DataTables.net Plugin, full documentation here: https://datatables.net/  -->
   <script src="./assets/js/plugins/jquery.dataTables.min.js"></script>
+  <!-- RichText Editor plugin -->
+  <script src="./assets/js/plugins/jquery.richtext.min.js"></script>
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async defer src="./../../buttons.github.io/buttons.js"></script>
   <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
@@ -322,11 +329,16 @@
   });
 </script>
 <script type="text/javascript">
+  $('.form-control.datepicker').focus(function() {
+      $(this).closest('.bmd-form-group').addClass(' is-filled')
+  })
+</script>
+<script type="text/javascript">
   $(".content-wrapper .main-content").perfectScrollbar()
 </script>
 <script type="text/javascript">
 $(".datepicker").datetimepicker({
- format: "MM/DD/YYYY",
+ format: "DD/MM/YYYY",
  icons: {
    time: "fa fa-clock-o",
    date: "fa fa-calendar",
@@ -339,6 +351,14 @@ $(".datepicker").datetimepicker({
    close: "fa fa-remove"
  }
 })
+</script>
+<script>
+    $(document).ready(function() {
+        $('.comments-content').richText({
+          height: 150,
+
+        });
+    });
 </script>
 </body>
 
