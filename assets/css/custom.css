@@ -148,3 +148,15 @@ position: relative;
   white-space: nowrap;
   width: 100%
 }
+.richText-toolbar ul{
+  margin: 0px;
+  padding: 0px
+}
+.richText .richText-editor:focus {
+    border-left: #e91e63 solid 2px;
+}
+.richText {
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
