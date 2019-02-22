@@ -160,3 +160,15 @@ position: relative;
     position: relative;
     z-index: 1;
 }
+.comment-save {
+    display: inline-block;
+    background-color: #e91e63;
+    padding: 4px 7px;
+    font-size: 11px;
+    color: white;
+    border-radius: 4px;
+    line-height: initial;
+}
+.comment-save:hover{
+  color: white
+}
