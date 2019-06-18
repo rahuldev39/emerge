@@ -172,11 +172,9 @@ position: relative;
 .comment-save:hover{
   color: white
 }
-.form-wrappper hr {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    border: 0;
-    border-top: 3px dotted rgb(238, 238, 238);
-    margin-left: -20px;
-    margin-right: -20px;
+.form-wrappper .card{
+  margin-bottom: 15px
+}
+.form-wrappper .hide{
+  display: none;
 }
