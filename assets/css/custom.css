@@ -178,3 +178,11 @@ position: relative;
 .form-wrappper .hide{
   display: none;
 }
+.floting-label{
+  top: -1rem;
+    left: 0;
+    font-size: .6875rem;
+}
+.td-label {
+    font-weight: 400;
+}
